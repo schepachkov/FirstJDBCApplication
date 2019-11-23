@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.addClientController">
+    <children>
+        <ImageView fitHeight="410.0" fitWidth="610.0" layoutX="1.0" opacity="0.44">
+            <image>
+                <Image url="@../img/bibl.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="204.0" layoutY="37.0" prefHeight="28.0" prefWidth="180.0" text="Добавление клиента" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="56.0" layoutY="116.0" text="ФИО">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="56.0" layoutY="171.0" text="Адрес">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFio" layoutX="128.0" layoutY="113.0" prefHeight="25.0" prefWidth="223.0" />
+        <Button fx:id="btnGoTo2display" layoutX="392.0" layoutY="350.0" mnemonicParsing="false" onAction="#goTo2DisplayOnAction" text="Возврат на главный экран">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="39.0" layoutY="225.0" text="Телефон">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnAddInDB" layoutX="38.0" layoutY="281.0" mnemonicParsing="false" text="Добавить">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <TextField fx:id="txtAdress" layoutX="128.0" layoutY="169.0" prefHeight="25.0" prefWidth="223.0" />
+      <TextField fx:id="txtTelephone" layoutX="128.0" layoutY="223.0" prefHeight="25.0" prefWidth="223.0" />
+    </children>
+</AnchorPane>

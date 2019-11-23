@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.addBookController">
+    <children>
+        <ImageView fitHeight="410.0" fitWidth="610.0" layoutX="1.0" opacity="0.44">
+            <image>
+                <Image url="@../img/bibl.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="223.0" layoutY="37.0" prefHeight="28.0" prefWidth="156.0" text="Добавление книги" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="127.0" layoutY="117.0" text="Автор">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="107.0" layoutY="172.0" text="Название">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtAuthor" layoutX="190.0" layoutY="114.0" prefHeight="25.0" prefWidth="223.0" />
+        <Button fx:id="btnGoToDisplay2" layoutX="392.0" layoutY="350.0" mnemonicParsing="false" onAction="#goToDisplay2OnAction" text="Возврат на главный экран">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <Label layoutX="88.0" layoutY="227.0" text="Год издания">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddBookInDB" layoutX="265.0" layoutY="310.0" mnemonicParsing="false" onAction="#addBookOnAction" text="Добавить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="275.0" text="Количество экземпляров">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNameBook" layoutX="190.0" layoutY="170.0" prefHeight="25.0" prefWidth="223.0" />
+      <TextField fx:id="txtGodIzd" layoutX="190.0" layoutY="225.0" prefHeight="25.0" prefWidth="223.0" />
+      <TextField fx:id="txtKolvo" layoutX="190.0" layoutY="273.0" prefHeight="25.0" prefWidth="223.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.prosmotrOstatkovController">
+    <children>
+        <ImageView fitHeight="410.0" fitWidth="610.0" layoutX="1.0" opacity="0.44">
+            <image>
+                <Image url="@../img/bibl.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="218.0" layoutY="33.0" prefHeight="28.0" prefWidth="165.0" text="Просмотр остатков" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="59.0" layoutY="193.0" text="Введите книгу">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="label" layoutX="224.0" layoutY="245.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtBookName" layoutX="167.0" layoutY="190.0" prefHeight="25.0" prefWidth="287.0" promptText="Например : Ревизор" />
+        <Button fx:id="btnGoTo2Display" layoutX="385.0" layoutY="347.0" mnemonicParsing="false" onAction="#goTo2DisplayOnAction" text="Вернуться на главный экран">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <Label fx:id="labelResult" layoutX="324.0" layoutY="246.0" />
+      <Button fx:id="btnOstatki" layoutX="486.0" layoutY="185.0" mnemonicParsing="false" onAction="#ostatkiToIntOnAction" text="Ok">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

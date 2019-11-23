@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.returnBookController">
+    <children>
+        <ImageView fitHeight="410.0" fitWidth="610.0" layoutX="1.0" opacity="0.44">
+            <image>
+                <Image url="@../img/bibl.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="237.0" layoutY="36.0" prefHeight="28.0" prefWidth="109.0" text="Прием книг" textAlignment="CENTER">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="50.0" layoutY="124.0" text="Название книги">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="64.0" layoutY="244.0" text="Имя читателя">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNameBook" layoutX="167.0" layoutY="121.0" prefHeight="25.0" prefWidth="287.0" promptText="Ревизор" />
+        <Button fx:id="btnReturn" layoutX="489.0" layoutY="213.0" mnemonicParsing="false" onAction="#returnBookOnAction" text="Вернуть">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnGoTo2Display" layoutX="377.0" layoutY="345.0" mnemonicParsing="false" onAction="#goTo2DisplayOnAction" text="Вернутся на главный экран">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="txtNameClient" layoutX="167.0" layoutY="242.0" prefHeight="25.0" prefWidth="287.0" promptText="Федя Пупыркин" />
+        <Label fx:id="labelResult" layoutX="44.0" layoutY="312.0" prefHeight="25.0" prefWidth="512.0">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="69.0" layoutY="169.0" text="Год издания">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtGodIzd" layoutX="167.0" layoutY="166.0" prefHeight="25.0" prefWidth="287.0" promptText="2002" />
+        <Label layoutX="73.0" layoutY="285.0" text="Его телефон">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtTelephone" layoutX="167.0" layoutY="282.0" prefHeight="25.0" prefWidth="287.0" promptText="7-52-78" />
+    </children>
+</AnchorPane>
